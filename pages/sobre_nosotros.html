@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="icon" href="../RodrisBurger.png">
+    <link rel="icon" href="../img/RodrisBurger.png">
     <title>Sobre Nosotros</title>
 </head>
 <body>
     <header>
-        <img src="../img/RodrisBurger.png" alt="Logo Rodri's Burger" width="120px" height="120px">
+        <img src="../img/RodrisBurger.png" alt="Logo Rodri's Burger" width="120px" height="120px" class="logoWeb">
+        <input type="checkbox" id="check">
+        <label for="check">
+        <img src="../img/Menu.png" alt="Logo Rodri's Burger" width="150px" height="150px" class="logoMenu">
+        </label>
         <nav class="navigation">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="./novedades.html">Novedades</a></li>
                 <li><a href="./locales.html">Locales</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
@@ -47,7 +50,7 @@
     </main>
     <article class="containerAppSn">
         <div class="appSn">
-                <img src="../img/celular Rodri's Burger.png" alt="App RodrisBurger">
+                <img src="../img/celular Rodri's Burger.png" alt="App RodrisBurger" class="imgApp">
             <div class="botones">
                 <h4>Descargate la APP</h4>
                 <img src="../img/google_play.png" alt="Google Play boton">
@@ -55,11 +58,10 @@
             </div>
             <div class="btn_Contacto">
                 <h4>¿Queres implementar nuestros servicios?</h4>
-                <form action="../contacto.html">
+                <form action="../pages/contacto.html">
                 <input type="submit" value="Contacto"/>
             </form>
             </div>
-
         </div>
     </article>
     <section class="btnGoUp">

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fontawesome.com/icons/arrow-right?f=classic&s=solid&an=bounce&pc=%23000000');
 
                                                         /*---------- Inicio ----------*/
 
@@ -9,7 +8,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.logoMenu {
+    visibility: hidden;
+}
 body {
     position: relative;
     display: flex;
@@ -512,7 +513,7 @@ header input {
     position: absolute;
     width: 10vh;
     height: 600%;
-    background-image: linear-gradient(300deg, #ff0000, #7d5d05);
+    background-image: linear-gradient(300deg, #00ff00, #00bbff);
     animation: rotate 4s linear infinite;
     z-index: 0;
 }
@@ -975,10 +976,17 @@ footer span {
 
 
                                                 /*-----------responsive 420px-----------*/
-                                                        /*---------- Contacto-----------*/
+                                                        /*---------- Nav & Footer-----------*/
 @media screen and (max-width: 420px) {
+.logoWeb {
+    visibility: hidden;
+}
+.logoMenu {
+    visibility: visible;
+    background-color: gray;
+}
 header {
-    display: block;
+    display: inline-block;
 }
 header img {
     position: absolute;
@@ -988,37 +996,55 @@ header img {
     left: 0;
     margin: 20px 0;
 }
+
+body {
+    background:rgb(14, 13, 23); 
+}
 .navigation {
     background-color: gray;
-    position: absolute;
-    width: 10vh;
-    height: 20vh;
-    margin-left: -100%;
-    transition: all .5s;
+    width: 42vh;
+    height: 11.8vh;
+    text-align: center;
+    margin-top: -100%;
+    transition: all .7s;                                                         
 }
 .navigation ul {
-    flex-direction: row;
+    left: -2rem;
 }
-
+.navigation  a {
+    margin: 0;
+    padding: 0;
+    margin-top: 40%;
+    font-size: 13px;
+}
+                                                            
 #check {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 20px;
     height: 20px;
 }
 #check:checked ~ .navigation {
-    margin: 0;
+    margin: 0px;
 }
 
-body {
-    background:rgb(10, 10, 10); 
+footer {
+    position: absolute;
+    background: none;
+    border: none;
+    margin-bottom: -100%;
 }
-.navigation a{
-    font-size:smaller;
+
+footer span {
+    font-size: 0px;
 }
+
+.imgFooter img {
+    width: 3rem;
+    height: 3rem;
+    }
+
+                                                        /*---------- Contacto-----------*/
 .contacto {
-    margin-top: 10%;
+    margin-top: 40%;
     padding: 20px 5px;
     box-shadow:none;
     border-radius: 20px;
@@ -1085,17 +1111,71 @@ body {
     font-size: 20px;
     text-transform:uppercase;
 }
-footer {
-    background: none;
+
+
+                                                        /*---------- Sobre Nosotros-----------*/
+
+.marginRotate {
+    top: 10%;
+    margin-left: 10%;
+    width: 30vh;
+    height: 15vh;
+}
+.marginRotate::before {
+    height: 300%;
+}
+.marginRotate h2 {
+    font-size: 2rem;
+}
+.sliderFrame {
+    position: absolute;
+    margin-top: 30%;
+    width: 51vh;
+    height: 20vh;
+}
+.sliderFrame img {
+    width: 49.5vh;
+}
+.containerSn {
+    margin-top: 40%;
+    display: grid;
+    width: 50vh;
     border: none;
+    flex-wrap: wrap-reverse;
+}
+.info {
+    grid-template-columns: auto;
+    margin-top: 80%;
+    padding: 0 30px;
+    width: 100%;
+    border: 2px solid white;
+}
+.info img {
+    height: 20vh;
+        
+}
+.containerAppSn {
+    display: flex;
+    background-image: none;
+}
+.appSn {
+    margin-left: -170%;
+}
+.appSn h4 {
+    width: 30vh;
+}
+.btn_Contacto {
+    margin-top: 180%;
 }
 
-footer span {
-    font-size: 0px;
+.botones {
+    visibility: hidden;
+}
+.imgApp {
+    visibility: hidden;
 }
 
-.imgFooter img {
-    width: 3rem;
-    height: 3rem;
+.btnGoUp input {
+    visibility: hidden;
     }
 }
