@@ -2369,7 +2369,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6f42c1;
   --bs-btn-disabled-border-color: #6f42c1;
-margin: 6rem 50rem;
+;
 }
 
 .btn-secondary {

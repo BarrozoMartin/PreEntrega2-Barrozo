@@ -417,7 +417,6 @@ header input {
 .appSn {
     display: flex;
     justify-content: center;
-    gap: 6rem;
     text-align: center;
     padding: 6rem;
 }
@@ -442,32 +441,26 @@ header input {
     animation: movimientoBtn 0.8s cubic-bezier(.36,.07,.19,.97);
     transform: translate3d(0, 0, 0);
 }
+.tituloh4 {
+    margin-top: 5%;
+    width: 90%;
 
-.botones , .btn_Contacto h4 {
+}
+.botones ,  h4 {
     font-size: 1.4rem;
     color: #FFF;
     text-transform: uppercase;
 }
 
 
-.btn_Contacto {
-    margin-top: 5%;
-    width: 100%;
+.botonNos {
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 50%;
+    width: 10%;
+
 }
 
-.btn_Contacto input {
-    margin-top: 30px;
-    height: 3rem;
-    width: 9rem;
-    border-radius: 5%;
-    cursor: pointer;
-}
-.btn_Contacto input:hover {
-    animation: movimientoBtn 0.8s cubic-bezier(.36,.07,.19,.97);
-    transform: translate3d(0, 0, 0);
-    background-color: orangered;
-    color: #FFF;
-}
 
 @keyframes movimientoBtn {
     10%, 90% {
@@ -482,7 +475,10 @@ header input {
     40%, 60% {
     transform: translate3d(4px, 0, 0);
     }
+    
 } 
+
+
 
                                                         /*---------- Novedades-----------*/
 
@@ -536,7 +532,8 @@ header input {
     width: 100%;
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 2fr 1fr;
+
 }
 
 .columnsx3 {
@@ -708,7 +705,7 @@ header input {
 
                                                         /*---------- Contacto -----------*/
 
-.contacto{
+.contacto {
     margin-top: 8%;
     padding: 40px 25px;
     box-shadow: 0 10px 10px 10px rgba(8, 5, 182, 0.5);
@@ -975,8 +972,8 @@ footer span {
 
 
 
-                                                /*-----------responsive 420px-----------*/
-                                                        /*---------- Nav & Footer-----------*/
+                /*-----------responsive 420px-----------*/
+                       /*---------- Nav & Footer-----------*/
 @media screen and (max-width: 420px) {
 .logoWeb {
     visibility: hidden;
@@ -984,6 +981,7 @@ footer span {
 .logoMenu {
     visibility: visible;
     background-color: gray;
+    height: 12vh;
 }
 header {
     display: inline-block;
@@ -998,12 +996,13 @@ header img {
 }
 
 body {
+    width: 420px;
     background:rgb(14, 13, 23); 
 }
 .navigation {
     background-color: gray;
-    width: 42vh;
-    height: 11.8vh;
+    width: 40vh;
+    height: 12vh;
     text-align: center;
     margin-top: -100%;
     transition: all .7s;                                                         
@@ -1042,15 +1041,14 @@ footer span {
     height: 3rem;
     }
 
-                                                        /*---------- Contacto-----------*/
+                                 /*---------- Contacto-----------*/
 .contacto {
     margin-top: 40%;
     padding: 20px 5px;
     box-shadow:none;
-    border-radius: 20px;
     text-align: center;
     width: 48vh;
-    border: 1px solid #FFF;
+    border: none;
 }
 .btnContacto {
     width: 30vh;
@@ -1113,11 +1111,10 @@ footer span {
 }
 
 
-                                                        /*---------- Sobre Nosotros-----------*/
+                          /*---------- Sobre Nosotros-----------*/
 
 .marginRotate {
     top: 10%;
-    margin-left: 10%;
     width: 30vh;
     height: 15vh;
 }
@@ -1130,11 +1127,11 @@ footer span {
 .sliderFrame {
     position: absolute;
     margin-top: 30%;
-    width: 51vh;
-    height: 20vh;
+    width: 48vh;
 }
 .sliderFrame img {
-    width: 49.5vh;
+    width: 25rem;
+    margin-left:0;
 }
 .containerSn {
     margin-top: 40%;
@@ -1161,21 +1158,113 @@ footer span {
 .appSn {
     margin-left: -170%;
 }
-.appSn h4 {
+
+h4 {
+    font-size: 1rem;
+}
+
+.tituloh4{
+    width: 100%;
+    margin-top: 170%;
+    margin-left: 25%;
+}
+
+.botonNos {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin-left: 165%;
+    
+}
+
+.botones .imgApp .btnGoUp input  {
+    visibility: hidden;
+}
+
+
+
+                          /*---------- Novedades-----------*/
+
+.video {
+    width: 50vh;
+    height: 30vh;
+}
+.rodiApp {
+    visibility: hidden;
+}
+
+.marginRotate3 {
+    top: 15%;
+    margin-left: 10%;
+    width: 25vh;
+    height: 15vh;
+}
+.marginRotate3::before {
+    height: 400%;
+}
+.marginRotate3 h1 {
+    font-size: 2rem;
+}
+
+.novedades {
+    display: flex;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.columnsx3 {
+    flex-direction: row;
+}
+
+.imgNov {
+    width: 20rem;
+    height: 20rem;
+    visibility: hidden;
+}
+
+                          /*---------- Locales-----------*/
+.container {
+    top: 19%;
+    width: 50vh;
+    height: 1vh;
+}
+.conteinerBs2 {
+    margin-top: 100%;
+}
+.carousel-item{
+    height: 40vh;
+}
+.carousel{
+    height: 40vh;
+}
+.marginRotate2 {
+    top: 12%;
+    margin-left: 10%;
     width: 30vh;
+    height: 15vh;
 }
-.btn_Contacto {
-    margin-top: 180%;
+.marginRotate2::before {
+    height: 400%;
+}
+.card-group{
+    margin-top: 65%;
+}
+.card {
+    margin-top: 50%;
+
+}
+.card-img-top{
+    height: 14vh;
 }
 
-.botones {
-    visibility: hidden;
+.card-body {
+    height: 20vh;
+    font-size: 10px;
+    font-weight: bold;
 }
-.imgApp {
-    visibility: hidden;
+.btnGoUp {
+    top: 75%;
+    bottom: 0;
+    margin-right: 20%;
 }
-
-.btnGoUp input {
-    visibility: hidden;
-    }
 }
