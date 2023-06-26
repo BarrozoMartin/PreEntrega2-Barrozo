@@ -1,0 +1,8 @@
+
+
+@mixin jorge_culo_roto($fondo: black) {
+    background-color: $fondo;
+    border: 4px solid black;
+    box-shadow:  0px 0px 2px black;
+    color: $color-letra;
+}
