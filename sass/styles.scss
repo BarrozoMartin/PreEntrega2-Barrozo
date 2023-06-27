@@ -1,37 +1,10 @@
-$color_1: black;
-$color_2: #FFF;
-$color_3: #fff;
-$color_4: #fffb00;
-$color_5: white;
-$color_6: #25D366;
-$color_7: #4267B2;
-$color_8: #833AB4;
-$font-family_1: "Poppins", sans-serif;
-$font-family_2: system-ui, -apple-system;
-$font-family_3: "Times New Roman", Times, serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import "./variables";
 
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
+
+
+
 /*---------- Inicio ----------*/
-/*---------- Navegacion efecto ----------*/
-/*---------- Boton Login Nav ----------*/
-/*---------- Menu Login ----------*/
-/*---------- Boton Cerrar "x" ----------*/
-/*---------- Formulario inicio ----------*/
-/*---------- Boton Formulario inicio ----------*/
-/*---------- Links formulario inicio ----------*/
-/*---------- Sobre Nosotros-----------*/
-/*---------- Novedades-----------*/
-/*---------- Locales -----------*/
-/*---------- Contacto -----------*/
-/*---------- Footer-----------*/
-/*-----------responsive 420px-----------*/
-/*---------- Nav & Footer-----------*/
-/*---------- Contacto-----------*/
-/*---------- Sobre Nosotros-----------*/
-/*---------- Novedades-----------*/
-/*---------- Locales-----------*/
-/*---------- Index -----------*/
-/*# sourceMappingURL=styles.css.map */
 * {
 	margin: 0;
 	padding: 0;
@@ -90,37 +63,20 @@ header {
 		position: absolute;
 	}
 }
------ {
+/*---------- Navegacion efecto ----------*/
+
 	.navigation {
 		ul {
-			position: relative;
-			width: 50rem;
-			display: inline-block;
-			font-size: 1.2rem;
-			color: $color_3;
-			text-decoration: none;
-			margin-left: 10px;
-			list-style: none;
+			width: 33rem;
+			@include nav
 		}
 	}
-}
+
 li {
-	position: relative;
-	display: inline-block;
-	font-size: 1.2rem;
-	color: $color_3;
-	text-decoration: none;
-	margin-left: 10px;
-	list-style: none;
+	@include nav
 }
 a {
-	position: relative;
-	display: inline-block;
-	font-size: 1.2rem;
-	color: $color_3;
-	text-decoration: none;
-	margin-left: 10px;
-	list-style: none;
+	@include nav
 }
 .navigation {
 	ul {
@@ -147,24 +103,12 @@ a {
 			}
 		}
 	}
+	/*---------- Boton Login Nav ----------*/
 	.btnLogin-popup {
-		width: 10vh;
-		height: 5vh;
-		background: transparent;
-		border: 2px solid #fff;
-		outline: none;
-		border-radius: 6px;
-		cursor: pointer;
-		font-size: 1em;
-		font-weight: 500;
-		margin-left: 40px;
-		color: $color_3;
-		&:hover {
-			background: #281f8c;
-			color: $color_2;
-		}
-	}
+		@include btn
 }
+}
+/*---------- Menu Login ----------*/
 .wrapper {
 	position: relative;
 	width: 41vh;
@@ -193,6 +137,7 @@ a {
 		transition: none;
 		transform: translateX(400px);
 	}
+	/*---------- Boton Cerrar "x" ----------*/
 	.icon-close {
 		position: absolute;
 		top: 0;
@@ -210,12 +155,12 @@ a {
 		z-index: 1;
 	}
 	h2 {
-		margin-top: px;
 		font-size: 2em;
 		color: $color_2;
 		text-align: center;
 	}
 }
+/*---------- Formulario inicio ----------*/
 .wrapper.active-popup {
 	transform: scale(1);
 }
@@ -302,6 +247,7 @@ a {
 		}
 	}
 }
+/*---------- Boton Formulario inicio ----------*/
 .btn {
 	width: 100%;
 	height: 5vh;
@@ -312,6 +258,7 @@ a {
 	color: $color_3;
 	font-weight: 500;
 }
+/*---------- Links formulario inicio ----------*/
 .login-register {
 	font-size: 0.9em;
 	color: $color_2;
@@ -330,19 +277,20 @@ a {
 		}
 	}
 }
--------------------------- {
-	.containerSn {
+/*---------- Sobre Nosotros-----------*/
+
+.containerSn {
 		position: relative;
 		display: flex;
 		margin-top: 25rem;
 		border-top: solid 3px #FFF;
 		border-bottom: solid 3px #FFF;
 	}
-}
+
 .info {
 	justify-content: flex-start;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr ;
 	width: 50%;
 	p {
 		padding: 10px;
@@ -396,7 +344,7 @@ a {
 		border-radius: inherit;
 	}
 }
-.sliderFrame {
+.sliderFrame { 
 	width: 100vh;
 	margin: auto;
 	overflow: hidden;
@@ -506,6 +454,7 @@ h4 {
 	margin-left: 50%;
 	width: 10%;
 }
+/*---------- Novedades-----------*/
 .marginRotate3 {
 	width: 20%;
 	height: 15%;
@@ -613,6 +562,7 @@ h3 {
 .imgNov {
 	width: 600px;
 }
+/*---------- Novedades-----------*/
 .rodiApp {
 	width: 200px;
 }
@@ -635,6 +585,8 @@ h3 {
 		margin-top: 20%;
 	}
 }
+
+/*---------- Locales -----------*/
 .marginRotate2 {
 	top: 15%;
 	width: 20%;
@@ -704,6 +656,7 @@ h3 {
 	margin-top: 50%;
 	width: 90%;
 }
+/*---------- Contacto -----------*/
 .contacto {
 	margin-top: 8%;
 	padding: 40px 25px;
@@ -834,6 +787,7 @@ textarea {
 	  background-position: 0% 50%;
 	}
   }
+  /*---------- Footer-----------*/
 footer {
 	font-family: $font-family_3;
 	position: fixed;
@@ -871,6 +825,9 @@ footer {
 	color: $color_8;
 	cursor: pointer;
 }
+
+/*-----------responsive 420px-----------*/
+/*---------- Nav & Footer-----------*/
 @media screen and (max-width: 420px) {
 	.logoWeb {
 		visibility: hidden;
@@ -892,30 +849,38 @@ footer {
 		}
 	}
 	body {
-		width: 420px;
 		background: rgb(14, 13, 23);
 	}
 	.navigation {
 		background-color: gray;
-		width: 40vh;
+		width: 38vh;
 		height: 12vh;
 		text-align: center;
 		margin-top: -100%;
 		transition: all 0.7s;
+
 		ul {
-			left: -2.2rem;
+			margin-left: -80%;
 		}
+		li {
+			top: 1rem;
+			left: 25%;
+			margin-left: 5px;
+		}
+		
 		a {
 			margin: 0;
 			padding: 0;
-			margin-top: 40%;
-			font-size: 12px;
+			font-size: 13px;
+			right: 1rem;
 		}
-		.btnLogin-popup {
+
+
+		.btnLogin-popup {			
 			height: 2rem;
-			width: 65%;
-			margin-top: 3.7rem;
-			margin-left: -20rem;
+			width: 70%;
+			margin-top: 4rem;
+			margin-left: -18rem;
 			position: absolute;
 		}
 	}
@@ -945,8 +910,10 @@ footer {
 			height: 3rem;
 		}
 	}
+
+	/*---------- Contacto-----------*/
 	.contacto {
-		margin-top: 40%;
+		margin-top: 50%;
 		padding: 20px 5px;
 		box-shadow: none;
 		text-align: center;
@@ -966,7 +933,7 @@ footer {
 		width: 30vh;
 		height: 4vh;
 		background: #281f8c;
-		border-radius: 6px;
+		border-radius: 30px;
 		font-size: 1em;
 		color: $color_3;
 	}
@@ -1018,6 +985,7 @@ footer {
 			margin: 0px 10px;
 		}
 	}
+	/*---------- Sobre Nosotros-----------*/
 	.marginRotate {
 		top: 10%;
 		width: 30vh;
@@ -1055,7 +1023,7 @@ footer {
 		grid-template-columns: auto;
 		margin-top: 80%;
 		padding: 0 30px;
-		width: 100%;
+		width: 80%;
 		img {
 			height: 20vh;
 		}
@@ -1141,6 +1109,7 @@ footer {
 	.columnas2 {
 		margin-top: 90%;
 	}
+	/*---------- Locales-----------*/
 	.container {
 		top: 19%;
 		width: 50vh;
@@ -1183,7 +1152,11 @@ footer {
 		bottom: 0;
 		margin-right: 20%;
 	}
+	/*---------- Index -----------*/
+
 	.wrapper {
 		margin-top: 50%;
 	}
 }
+
+/*# sourceMappingURL=styles.css.map */
