@@ -824,6 +824,111 @@ footer {
 	color: $color_8;
 	cursor: pointer;
 }
+/*-----------responsive 1200px-----------*/
+@media screen and (max-width: 1200px) {
+	.navigation {
+		a {
+			left: 40px;
+			font-size: 20px;
+		}
+	}
+	/*-----------Sobre nosotros-----------*/
+	.marginRotate {
+		top: 12%;
+		width: 40vh;
+		height: 20vh;
+		&::before {
+			height: 300%;
+		}
+		h2 {
+			font-size: 3rem;
+		}
+	}
+	.sliderFrame {
+		position: absolute;
+		margin-top: 30%;
+		width: 100%;
+		img {
+			width: 60rem;
+			margin-left: 0;
+		}
+	}
+	.containerSn {
+		margin-top: 8%;
+		display: grid;
+		width: 100%;
+		border: none;
+	}
+	.info {
+		grid-template-columns: 1fr 1fr;
+		margin-top: 80%;
+		padding: 0 20px;
+		width: 100%;
+		gap: 2rem;
+		img {
+			height: 25vh;
+		}
+	}
+	.containerAppSn {
+		width: 100%;
+		top: 30%;
+		display: flex;
+		height: 28rem;
+	}
+	.imgApp {
+		width: 15rem;
+	}
+	.appSn {
+		width: 100%;
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+	.botonNos {
+		margin-top: 8rem;
+		width: 10rem;
+	}
+	.btnGoUp {
+		top: 50%;
+		visibility: hidden;
+		input {
+			border-radius: 25px;
+			margin: 1rem 0;
+		}
+	}
+	/*-----------Novedades-----------*/
+	.marginRotate3 {
+		width: 50vh;
+	}
+	.columnsx3 {
+		margin-top: 30%;
+	}
+	/*-----------Locales-----------*/
+	.container {
+		top: 15%;
+	}
+	.card-group {
+		margin-top: 30%;
+	}
+	/*-----------Contacto-----------*/
+	.contacto {
+		height: 75vh;
+	}
+	.input-group2 {
+		height: 5vh;
+	}
+	.form-txt {
+		a {
+			font-size: 16px;
+		}
+	}
+}
+/*-----------responsive 800px-----------*/
+@media screen and (max-width: 800px) {
+	.containerAppSn {
+		top: 60%;
+	}
+}
 
 /*-----------responsive 420px-----------*/
 /*---------- Nav & Footer-----------*/
@@ -852,7 +957,7 @@ footer {
 	}
 	.navigation {
 		background-color: gray;
-		width: 38vh;
+		width: 40vh;
 		height: 12vh;
 		text-align: center;
 		margin-top: -100%;
@@ -863,7 +968,7 @@ footer {
 		}
 		li {
 			top: 1rem;
-			left: 25%;
+			left: 15%;
 			margin-left: 5px;
 		}
 		
@@ -878,7 +983,7 @@ footer {
 		.btnLogin-popup {			
 			height: 2rem;
 			width: 70%;
-			margin-top: 4rem;
+			margin-top: 3rem;
 			margin-left: -18rem;
 			position: absolute;
 		}
@@ -1004,7 +1109,7 @@ footer {
 	
 	.sliderFrame {
 		position: absolute;
-		margin-top: 30%;
+		margin-top: 40%;
 		width: 48vh;
 		img {
 			width: 25rem;
@@ -1025,6 +1130,7 @@ footer {
 		width: 80%;
 		img {
 			height: 20vh;
+			width: 40vh;
 		}
 	}
 	.containerAppSn {
